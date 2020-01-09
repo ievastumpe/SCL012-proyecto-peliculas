@@ -77,7 +77,7 @@ La mejor forma de que el proyecto se adecue a las necesidades del usuario son co
 
 Con los Test de Usabilidad podemos observar los requerimientos que los usuarios proponen, es por ello que iterar el diseño ayuda para llegrán a un mejor resultado.
 
-[VER PROTOTIPO AQUÍ]()
+[VER PROTOTIPO AQUÍ](https://www.figma.com/proto/RsqdGYbIbBUDNnqmBsRIkV/Api?node-id=127%3A0&scaling=scale-down)
 
 ## **Procesos**
 
@@ -85,7 +85,7 @@ Para el desarrolllo de la página web el equipo ocupará plataformas que lo har�
 
 En proceso de diseño UX para crear la experiencia más cercana al usuario con el resultado final. La plataforma Figma nos ayudará a elaborar un prototipo dinámico y navegable.
 
-Obtendremos recursos del framework Boostrap para darle al usuario cercanía con las diferentes páginas web ya existentes y que así pueda manjearse de forma fluida.
+Obtendremos recursos del framework Boostrap para darle al usuario cercanía con las diferentes páginas web ya existentes y que así pueda manejearse de forma fluida.
 
 En el proceso de Front-End se ocupará el editor de código Visual Studio Code para dar las funcionalidades e interacciónes solicitadas. 
 
