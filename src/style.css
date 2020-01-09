@@ -1,0 +1,105 @@
+/*Eliminar margen y padding que ponen navegadores por defecto*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Elimina desplazamiento horizontal (scroll) creado por video */
+  overflow-x: hidden;
+}
+
+.navBorder {
+  border-bottom: 4px solid gray;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+  color: #fff;
+}
+
+.navigation {
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  border-bottom: 1px solid #6c757d;
+  padding-bottom: 0;
+}
+
+.navigation li a:hover,
+.navigation .menu-btn:hover {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.logo {
+  height: 1rem;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.card {
+  border: none;
+}
+
+.red:hover {
+  color: #fff;
+}
+
+.popcorn {
+  width: 30px;
+  padding-bottom: 1.5rem;
+}
+
+.netflix {
+  width: 130px;
+  padding-bottom: 1.5rem;
+}
+
+.containerPicture {
+  width: 300px;
+  height: 466px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.poster {
+  width: 300px;
+  height: 466px;
+  transition: transform .3s ease-in-out;
+}
+
+.containerPicture>.poster:hover {
+  transform: translate3d(0px, -466px, 0px);
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top {
+  margin-top: 6rem;
+}
+
+#top {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
