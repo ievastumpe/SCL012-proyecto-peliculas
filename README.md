@@ -99,7 +99,7 @@ Cada integrante contará con una tarea para desarrollar, la que optimizará el p
 - Ieva:
 - Ruth:
 - Fernanda:
-- Camila:
+- Camila: Analisis de usuario (historias de usuario, test de usabilidad), creacion de diseño y prototipos(desiciones de diseño,iteaciones), realizaciòn de readme.
 
  ## **Conclusión**
 
