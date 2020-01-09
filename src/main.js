@@ -479,17 +479,6 @@ function hideStartAdventure() {
       });
   }
 }
-
-/*
-fetch ('http://www.omdbapi.com/?s=movie&apikey=c8814936') /*type fue repmlpazado x ?s */
- /*.then (response => response.json())
- .catch(error => console.log(error))
-
- .then (data => console.log (data))*/
-
-
-
-
  
 
 const topComedyMovie = ["tt0252487", "tt6751668", "tt0118799", "tt1675434", "tt0088763", "tt0032553", "tt0027977", "tt0021749", "tt1187043", "tt0057012"];
