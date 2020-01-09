@@ -21,7 +21,7 @@
 <body>
 
   <!-- Menú de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navBorder navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navBorder navigation fixed-top">
     <a class="navbar-brand ml-5" href="#"><img src="images/logo.jpg" alt="logo" class="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -148,8 +148,11 @@
     </div>
   </section>
 
+  <section id="top" class="container top">
+    <h3 class="text-center font-weight-bolder my-5">Top Movies</h3>
+    <div id="wrap" class="wrap"></div>
+  </section>
 
-  <div id="wrap" class="wrap"></div>
 
 <!-- Footer -->
 <footer id="contact" class="bg-secondary text-white text-center mx-auto pt-5">
@@ -161,17 +164,6 @@
 
 <p class="pb-5">TopMovie 2019. Todos los derechos reservados.</p>
 </footer>
-
-  <script id="movieCard" type="text/template">
-    <div class="card">
-        <img class="card-img-top" src="#" alt="Card image cap" />
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </script>
-
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -67,6 +67,7 @@ body {
   width: 300px;
   height: 466px;
   overflow: hidden;
+  margin: 10px;
 }
 
 .poster {
@@ -80,8 +81,18 @@ body {
 }
 
 .wrap {
-    display: flex;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top {
+  margin-top: 6rem;
+}
+
+#top {
+  display: none;
+}
 
 @media (max-width: 768px) {
   h1 {
