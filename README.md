@@ -96,7 +96,7 @@ Para obtener las películas y series se trabajará con datos obtenidos desde la 
 Cada integrante contará con una tarea para desarrollar, la que optimizará el proceso y contribuirá al resultado final. 
 
 - Consuelo:
-- Ieva:
+- Ieva: aplicar fetch y API (OMDB) para traer data sobre series & peliculas; buscar información sobre los top 10 mejores peliculas de genero Comedia, Acción, Thriller, crear arrays. 
 - Ruth:
 - Fernanda:
 - Camila: Analisis de usuario (historias de usuario, test de usabilidad), creacion de diseño y prototipos(desiciones de diseño,iteaciones), realizaciòn de readme.
