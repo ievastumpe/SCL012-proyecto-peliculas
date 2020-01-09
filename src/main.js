@@ -479,10 +479,7 @@ function hideStartAdventure() {
       });
   }
 }
-
-
-
-
+ 
 
 const topComedyMovie = ["tt0252487", "tt6751668", "tt0118799", "tt1675434", "tt0088763", "tt0032553", "tt0027977", "tt0021749", "tt1187043", "tt0057012"];
 const topActionMovie = ["tt0468569", "tt5813916", "tt1375666", "tt0133093", "tt0047478", "tt4154796", "tt4154756", "tt0172495", "tt0110413", "tt0103064"];

@@ -27,7 +27,7 @@ Es por eso que se crea Top Movie, una página web enfocada en facilitar la busqu
  * Características y necesidades del usuario
 
 - Hombres y mujeres de entre 20-35 años.
-- Los usuarios cuentan con una vida agetreada y ven en estas plataformas un momento de distracción.
+- Los usuarios cuentan con una vida ajetreada y ven en estas plataformas un momento de distracción.
 - Pierden mucho tiempo buscando qué pelicula o serie ver.
 - Buscan información rápida y de fácil acceso.
 
@@ -77,7 +77,7 @@ La mejor forma de que el proyecto se adecue a las necesidades del usuario son co
 
 Con los Test de Usabilidad podemos observar los requerimientos que los usuarios proponen, es por ello que iterar el diseño ayuda para llegrán a un mejor resultado.
 
-[VER PROTOTIPO AQUÍ]()
+[VER PROTOTIPO AQUÍ](https://www.figma.com/proto/RsqdGYbIbBUDNnqmBsRIkV/Api?node-id=127%3A0&scaling=scale-down)
 
 ## **Procesos**
 
@@ -85,7 +85,7 @@ Para el desarrolllo de la página web el equipo ocupará plataformas que lo har�
 
 En proceso de diseño UX para crear la experiencia más cercana al usuario con el resultado final. La plataforma Figma nos ayudará a elaborar un prototipo dinámico y navegable.
 
-Obtendremos recursos del framework Boostrap para darle al usuario cercanía con las diferentes páginas web ya existentes y que así pueda manjearse de forma fluida.
+Obtendremos recursos del framework Boostrap para darle al usuario cercanía con las diferentes páginas web ya existentes y que así pueda manejearse de forma fluida.
 
 En el proceso de Front-End se ocupará el editor de código Visual Studio Code para dar las funcionalidades e interacciónes solicitadas. 
 
@@ -96,10 +96,10 @@ Para obtener las películas y series se trabajará con datos obtenidos desde la 
 Cada integrante contará con una tarea para desarrollar, la que optimizará el proceso y contribuirá al resultado final. 
 
 - Consuelo:
-- Ieva:
+- Ieva: aplicar fetch y API (OMDB) para traer data sobre series & peliculas; buscar información sobre los top 10 mejores peliculas de genero Comedia, Acción, Thriller, crear arrays. 
 - Ruth:
 - Fernanda:
-- Camila:
+- Camila: Analisis de usuario (historias de usuario, test de usabilidad), creacion de diseño y prototipos(desiciones de diseño,iteaciones), realizaciòn de readme.
 
  ## **Conclusión**
 
