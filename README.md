@@ -53,17 +53,14 @@ Dado a que que se trabajará con poster de diversos estilos y colores. Que será
 
 
 ![prototiposketch1]()
-![prototiposketch2]()
+
 
 
 * Prototipo de Alta fidelidad
 
 Una vez creados los primeros sketch de la página se pasa al siguiente prototipo que cuenta con una vista preliminar de cómo sería el diseño final.
 
-![prototipo1]()
-![prototipo2]()
-![prototipo3]()
-![prototipo4]()
+![prototipo1](https://github.com/RuthMaureira/SCL012-proyecto-peliculas/blob/master/img/mapanavegaci%C3%B3n.png)
 
 
 ## **Test de Usabilidad**
