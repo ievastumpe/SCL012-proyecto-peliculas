@@ -1,24 +1,104 @@
-import { orderMovie } from './data.js'; // Importar la función qe está en data.js
+import {
+  orderMovie
+} from './data.js'; // Importar la función qe está en data.js
 
 
 
 /*---------------------------------------------------------------------------------*/
 
 /* API Omdb */
+const fetchUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=90f8aca6`;
+// const searchParam = "";
+
+// fetch(`${fetchUrl}&${searchParam}`)
+fetch(fetchUrl)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json.Response);
+    const results = json.Search;
+
+    console.log(json);
+    console.log(createCard(json));
+    // for (let i = 0; i < results.length; i++) {
+    //   const movie = results[i];
+    //
+    //   renderMovie(movie.Poster, movie.Title, movie.Year, movie.imdbID);
+    // }
+  });
+
+
 
 /*---------------------------------------------------------------------------------*/
 
-/* Ocultar carrusel al ingresar a página */
+/* Crear card */
+function createCard(data) {
 
-/* Ocultar carrusel  al hacer click en buscar*/
-const carouselStart = document.getElementById("carouselStart");
-const btnSearch = document.getElementById("btnSearch");
+  /* Creación de elementos */
+  let containerPicture = document.createElement("div");
+  let cardPoster = document.createElement("div");
+  let imgMovie = document.createElement("img");
+  let cardYear = document.createElement("h3");
+  let cardTitle = document.createElement("h2");
+  let cardDirector = document.createElement("h5");
+  let cardActor = document.createElement("h5");
+  let cardPlot = document.createElement("p");
 
-btnSearch.addEventListener('click', hideCarousel);
+  /* Asignación de clases*/
+  /* Asignación de atributos */
+  /* Valores */
+  /* Info elementos y árbol padre-hijo*/
 
-function hideCarousel(){
-  carouselStart.style.display = "none";
+
+  containerPicture.classList.add("containerPicture");
+
+  /* div Poster */
+  cardPoster.classList.add("poster");
+  containerPicture.appendChild(cardPoster);
+
+  /* Datos poster */
+  imgMovie.setAttribute("src", data.Poster);
+  imgMovie.setAttribute("alt", "imagen de " + data.Title);
+  cardPoster.appendChild(imgMovie);
+
+  cardYear.innerHTML = data.Year;
+  cardPoster.appendChild(cardYear);
+
+  cardTitle.innerHTML = data.Title;
+  cardPoster.appendChild(cardTitle);
+
+  cardDirector.innerHTML = data.Director;
+  cardPoster.appendChild(cardDirector);
+
+  cardActor.innerHTML = data.Actors;
+  cardPoster.appendChild(cardActor);
+
+  cardPlot.innerHTML = data.Plot;
+  cardPoster.appendChild(cardPlot);
+
+  return containerPicture;
+
 }
+
+/*---------------------------------------------------------------------------------*/
+
+/* Al hacer click en películas ocultar carrusel e información*/
+const carouselStart = document.getElementById("carouselStart");
+const information = document.getElementById("information");
+const movieNav = document.getElementById("movieNav");
+
+movieNav.addEventListener('click', hideStart);
+
+function hideStart() {
+  carouselStart.style.display = "none";
+  information.style.display = "none";
+}
+
+
+
+
+/*---------------------------------------------------------------------------------*/
 
 
 
@@ -27,42 +107,6 @@ function hideCarousel(){
 
 /* Buscar título */
 
-//
-//
-// function renderMovie(image, title, year, production) {
-//   const movieTpl = document.getElementById("movieCardTpl");
-//
-//   let movieEl = document.createElement("div");
-//
-//   movieEl.innerHTML = movieTpl.innerHTML;
-//
-//   movieEl.querySelector(".card-img-top").src = image;
-//   movieEl.querySelector(".card-title").innerHTML = title + " " +production;
-//   movieEl.querySelector(".card-text").innerHTML = "Year: " + year;
-//   document.querySelector(".card-columns").appendChild(movieEl);
-// }
-//
-// const searchTitle = document.getElementById("searchInput").value;
-//
-// /* Realizar llamado API */
-//
-// const fetchUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=90f8aca6`;
-// const searchParam = "s=amor&type=series";
-//
-// fetch(`${fetchUrl}&${searchParam}`)
-//   .then(function(response) {
-//     return response.json();
-//   })
-//   .then(function(json) {
-//     console.log(json.Response)
-//     const results = json.Search;
-//
-//     for (let i = 0; i < results.length; i++) {
-//       const movie = results[i];
-//
-//       renderMovie(movie.Poster, movie.Title, movie.Year, movie.imdbID);
-//     }
-//   });
 
 
 

@@ -49,6 +49,40 @@ body {
   border: none;
 }
 
+.red:hover {
+  color: #fff;
+}
+
+.popcorn {
+  width: 30px;
+  padding-bottom: 1.5rem;
+}
+
+.netflix {
+  width: 130px;
+  padding-bottom: 1.5rem;
+}
+
+.containerPicture {
+  width: 300px;
+  height: 466px;
+  overflow: hidden;
+}
+
+.poster {
+  width: 300px;
+  height: 466px;
+  transition: transform .3s ease-in-out;
+}
+
+.containerPicture>.poster:hover {
+  transform: translate3d(0px, -466px, 0px);
+}
+
+.wrap {
+    display: flex;
+  }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
