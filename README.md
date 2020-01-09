@@ -2,74 +2,110 @@
 
  ## Índice
 
-* [Preámbulo](#preámbulo)
+* [Introducción](#Introducción)
 * [Resumen del proyecto](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Consideraciones técnicas](#consideraciones-técnicas)
+* [Procesos y decisiones de diseño](#Procesos-y-decisiones-de-diseño)
+* [Iteración](#Iteración)
+* [Procesos](#Procesos)
+* [Conclusión](#Conclusión)
 
  ***
 
- ## **Preámbulo**
+ ## **Introducción**
 
- Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Hulu, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por pop-corn / pipoca / palomitas /
-canchita / cabritas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+En la actualidad, contamos con varias plataformas para ver peliculas o series via streaming, se está optando a estas plataformas por varias razones, ya sean por estar en la comodidad de el hogar, por no tener tiempo para ir al cine, por la variedad de contenido al que pueden acceder sólo con un click, etc.
 
- ![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
+También la era tecnológica en la que estamos inmersos, nos exije constantemente ver información de manera instantanea y en en lugar que nos encontremos.
+
+Entonces surge la siguiente interrogante ¿Cómo mostrar a este usuario información precisa sobre qué peliculas o serie puede ver y evitar que indague por su cuenta sin tener resultados satisfactorios?
+
 
  ## **Resumen del proyecto**
 
- Durante estos días crearás el producto que tú quieras alrededor del mundo
-de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en Netflix,
-uno de pelis de terror... o... ¡lo que quieras!
+Es por eso que se crea Top Movie, una página web enfocada en facilitar la busqueda de peliculas y series, recomendando las 10 mejores de cada una de sus categorías, basada en la crítica por espectadores, valoracion y género, entre otras, dando al usuario la solución a la problematica previamente señalada.
 
- ## **Consideraciones generales**
+ * Características y necesidades del usuario
 
- * Este proyecto se debe resolver en equipos de hasta 4 personas.
-* Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-* Tiempo para completar el reto: 4 días.
+- Hombres y mujeres de entre 20-35 años.
+- Los usuarios cuentan con una vida agetreada y ven en estas plataformas un momento de distracción.
+- Pierden mucho tiempo buscando qué pelicula o serie ver.
+- Buscan información rápida y de fácil acceso.
+
+Considerando lo anterior creamos nuestra historia de usuario que plantea lo siguiente
+
+* "Yo como usuario quiero saber las mejores películas o series para ahorrar tiempo en la busqueda de estas"
+
+Dicho lo anterior, con los siguientes criterios de aceptación podremos lograr que el prototipo cuente con los elementos necesarios.
+
+- Una barra de menú que muestre las 2 categorias solicitadas(películas/series)
+- Un menú desplegable que cuente con los género de Drama, Acción, Comedia, Thriller, Aventura, Romance y Crímen.
+- Un menu desplegable que cuente con la opcion de ordenar los resultados por Año y Popularidad.
+- Una tarjeta donde se muestre el resultado con informacion sobre el Nombre, Año, Director, Reparto, género, valoración y una reseña.
+
+ ## **Decisiones de diseño**
+
+En esta etapa, con lo señalado en los criterios de aceptación se realizan los primeros prototipos.
+
+Dado a que que se trabajará con poster de diversos estilos y colores. Que será informativa y que se trabajará con varios datos, la pagina web se enfoca en un diseño minimlista, y estos poster serán los encargados de asignarle contraste a la página. Se elige un fondo blanco y simple para que no sea sobrecargado ni molesto de ver por los usuarios.
 
 
- ## **Objetivos de aprendizaje**
+* Prototipo de baja fidelidad
 
- * Enfrentarte a un reto de corta duración en el que pongas en práctica todo
-lo aprendido hasta ahora.
-* Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-personas en un equipo de trabajo, mayor complejidad para: tener un entendimiento
-común, seguir el flujo de trabajo, buscar consensos, etc.
 
- ## **Ejes importantes**
+![prototiposketch1]()
+![prototiposketch2]()
 
- * Detallar planeamiento del trabajo en un repositorio único por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-y las inspiraciones utilizadas para definir el producto.
-* Además, deberás detallar en el archivo _readme_, qué hizo cada una en el
-proyecto.
-* El producto deberá presentarse publicado en github pages.
 
- ## **Consideraciones técnicas**
+* Prototipo de Alta fidelidad
 
- * El diseño visual de los componentes es de libre elección de las estudiantes,
-sin embargo, si no quieren crearlo desde cero, pueden utilizar el que
-propuso [Walmart](https://drive.google.com/file/d/0B6GBtl-gO6LwaVprQkFqTGI2a28/view).
-* Deberán usar al menos un framework de css.
+Una vez creados los primeros sketch de la página se pasa al siguiente prototipo que cuenta con una vista preliminar de cómo sería el diseño final.
 
-## **Tips para la organización de trabajo entre UX y Front end**
+![prototipo1]()
+![prototipo2]()
+![prototipo3]()
+![prototipo4]()
 
-* Las UX y FE entienden en conjunto el reto en el que van a trabajar, se organizan y arman sus primeros bocetos.
-* Con los primeros bocetos/ideas, las FE pasan a crear su ambiente de desarrollo y a crear componentes atómicos que luego les sea fácil personalizar con CSS y utilizar para crear interfaces más complejas. Además, las FE empiezan también a trabajar en la lógica de la aplicación. Mientras tanto, las UX crean una guía de estilos, los flujos de usuarios, hacen un prototipo más completo y lo testean.
-* Las UX comparten el prototipo testeado, para que el equipo empiece a personalizar los componentes y a ponerlos en conjunto.
-* Las UX hacen QA y testing con los releases que vayan haciendo las FE.
-* Planifiquen, historias de usuario y definition of done son importantísimos.
-* Usen las ceremonias ágiles para saber en que van como equipo, dailys y retrospectivas diarias son esenciales.
-* Iteren, iteren, iteren.
 
-## **Presentación de Proyecto**
+## **Test de Usabilidad**
 
-* Las demos no deben durar más de 5 minutos y deben mostrar el producto y las tecnologías usadas.
-* La audiencia podrá realizar preguntas dentro de los siguientes 3 minutos. 
+La mejor forma de que el proyecto se adecue a las necesidades del usuario son con los test de usabiliad, que nos ayudarán a tener persepciones reales y directas con usuarios.
+
+- [Video Usuario Nº1](https://www.loom.com/share/4e4be3e85e8f480b9d353a48408f7391)
+- [Video Usuario Nº2](https://www.loom.com/share/3a07912e9cdc4aae8b1e9110db5bbd87)
+- [Video Usuario Nº3](https://www.loom.com/share/1b99a2bc187c4a61af93345080cd5041)
+- [Video Usuario Nº4](https://www.loom.com/share/8ee21af4a0984070a164bf9347973238)
+- [Video Usuario Nº5](https://www.loom.com/share/fe46ddfb64094980bd70ef39075d9bb7)
+
+## **Iteración**
+
+Con los Test de Usabilidad podemos observar los requerimientos que los usuarios proponen, es por ello que iterar el diseño ayuda para llegrán a un mejor resultado.
+
+[VER PROTOTIPO AQUÍ]()
+
+## **Procesos**
+
+Para el desarrolllo de la página web el equipo ocupará plataformas que lo harán posible.
+
+En proceso de diseño UX para crear la experiencia más cercana al usuario con el resultado final. La plataforma Figma nos ayudará a elaborar un prototipo dinámico y navegable.
+
+Obtendremos recursos del framework Boostrap para darle al usuario cercanía con las diferentes páginas web ya existentes y que así pueda manjearse de forma fluida.
+
+En el proceso de Front-End se ocupará el editor de código Visual Studio Code para dar las funcionalidades e interacciónes solicitadas. 
+
+Para obtener las películas y series se trabajará con datos obtenidos desde la API de OMDB (The Open Movie Database). 
+
+* Asigación de Tareas
+
+Cada integrante contará con una tarea para desarrollar, la que optimizará el proceso y contribuirá al resultado final. 
+
+- Consuelo:
+- Ieva:
+- Ruth:
+- Fernanda:
+- Camila:
+
+ ## **Conclusión**
+
+Nuestra página web viene a entregarle al usuario la confianza de encontrar una película y/o serie que esté dentro de las 10 mejores catalogadas dentro del género que desee, asi le facilitaremos la busqueda, ya que en estos tiempos se busca tener información lo mas precisa e instantanea posible.
+
+Esto se hace posible obteniendo datos de la API de OMDB que nos brinda información fidedigna de cada película o serie, lo que le da la seguridad al usuario que podrá ver una película que será de su agrado.
