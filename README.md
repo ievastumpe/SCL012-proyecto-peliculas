@@ -27,7 +27,7 @@ Es por eso que se crea Top Movie, una página web enfocada en facilitar la busqu
  * Características y necesidades del usuario
 
 - Hombres y mujeres de entre 20-35 años.
-- Los usuarios cuentan con una vida agetreada y ven en estas plataformas un momento de distracción.
+- Los usuarios cuentan con una vida ajetreada y ven en estas plataformas un momento de distracción.
 - Pierden mucho tiempo buscando qué pelicula o serie ver.
 - Buscan información rápida y de fácil acceso.
 
