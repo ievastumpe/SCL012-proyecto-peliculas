@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -22,7 +21,7 @@
 <body>
 
   <!-- Menú de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navBorder navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navBorder navigation fixed-top">
     <a class="navbar-brand ml-5" href="#"><img src="images/logo.jpg" alt="logo" class="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,10 +30,10 @@
     <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item mr-5">
-          <a class="nav-link" href="#movie" id="movie">Peliculas</a>
+          <a class="nav-link" href="#wrap" id="movieNav">Peliculas</a>
         </li>
         <li class="nav-item mr-5">
-          <a class="nav-link" href="#movie" id="movie">Series</a>
+          <a class="nav-link" href="#" id="seriesNav">Series</a>
         </li>
 
       </ul>
@@ -42,12 +41,12 @@
         <li class="nav-item dropdown mr-5">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Género</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Drama</a>
-            <a class="dropdown-item" href="#">Comedia</a>
-            <a class="dropdown-item" href="#">Acción</a>
-            <a class="dropdown-item" href="#">Crimen</a>
-            <a class="dropdown-item" href="#">Thriller</a>
-            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#" id="drama">Drama</a>
+            <a class="dropdown-item" href="#" id="comedy">Comedia</a>
+            <a class="dropdown-item" href="#" id="action">Acción</a>
+            <a class="dropdown-item" href="#" id="crime">Crimen</a>
+            <a class="dropdown-item" href="#" id="thriller">Thriller</a>
+            <a class="dropdown-item" href="#" id="romance">Romance</a>
             <a class="dropdown-item" href="#" id="adventure">Aventura</a>
           </div>
         </li>
@@ -67,6 +66,9 @@
         <input class="form-control mr-sm-2" style="width:200px" type="search" placeholder="&#128269; Buscar título" aria-label="Search" id="searchInput">
         <button class="btn btn-outline-secondary my-2 my-sm-0 mr-5 ml-2" type="submit" id="btnSearch">Buscar</button>
       </form>
+      <ul class="navbar-nav mr-5">
+        <li class="nav-item red"><a href="#contact"><i class="fas fa-rss-square text-secondary"></i></a></li>
+      </ul>
     </div>
   </nav>
 
@@ -113,7 +115,7 @@
   </div>
 
   <!-- Informativo -->
-  <section class="container mt-5">
+  <section class="container mt-5" id="information">
     <h3 class="text-center font-weight-bolder mb-5">Servicios</h3>
     <div class="row row-cols-1 row-cols-md-3">
       <div class="col mb-4">
@@ -146,21 +148,22 @@
     </div>
   </section>
 
+  <section id="top" class="container top">
+    <h3 class="text-center font-weight-bolder my-5">Top Movies</h3>
+    <div id="wrap" class="wrap"></div>
+  </section>
 
-  <div id="wrap"></div>
 
-  <div class="card-columns"></div>
+<!-- Footer -->
+<footer id="contact" class="bg-secondary text-white text-center mx-auto pt-5">
+<a href="https://www.imdb.com/" target="_blank"><i class="fab fa-imdb fa-3x text-white mx-5"></i></a>
+<a href="https://popcorntime.sh/es_419/" target="_blank">
+  <img src="images/popcorn.png" alt="popcorn time logo" class="popcorn mx-5">
+</a>
+<a href="https://www.netflix.com/cl/" target="_blank"><img src="images/netflix.png" alt="netflix logo" class="netflix mx-5"></a>
 
-  <script id="movieCardTpl" type="text/template">
-    <div class="card">
-        <img class="card-img-top" src="#" alt="Card image cap" />
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </script>
-
+<p class="pb-5">TopMovie 2019. Todos los derechos reservados.</p>
+</footer>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
