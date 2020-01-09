@@ -97,6 +97,8 @@ Cada integrante contará con una tarea para desarrollar, la que optimizará el p
 
 - Consuelo:
 - Ieva: aplicar fetch y API (OMDB) para traer data sobre series & peliculas; buscar información sobre los top 10 mejores peliculas de genero Comedia, Acción, Thriller, crear arrays.
+- Ruth: 
+- Fernanda: modificar la carta de presentacion de las peliculas. buscar informacion sobre los top 10 mejores series de los generos Comedia, Acción, Thriller, crear arrays.
 - Ruth: maquetación html y css en base a diseño, análisis y pruebas con API Omdb y funcionalidad módulos js.
 - Fernanda:
 - Camila: Analisis de usuario (historias de usuario, test de usabilidad), creacion de diseño y prototipos(desiciones de diseño,iteaciones), realizaciòn de readme.

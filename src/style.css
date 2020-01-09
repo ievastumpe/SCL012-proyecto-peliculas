@@ -72,12 +72,13 @@ body {
 
 .poster {
   width: 300px;
-  height: 466px;
+  height: 566px;
   transition: transform .3s ease-in-out;
+
 }
 
 .containerPicture>.poster:hover {
-  transform: translate3d(0px, -466px, 0px);
+  transform: translate3d(0px, -366px, 0px);
 }
 
 .wrap {
